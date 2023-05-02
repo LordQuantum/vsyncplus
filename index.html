@@ -8,30 +8,6 @@
     
     <title>vSync+</title>
     
-    <script>
-    function blockAds() {
-        // Hide ads and ad-related elements
-        var elements = document.querySelectorAll('.ad, .ads, .ad-container, .ad-banner, .ad-wrapper, .ad-slot');
-        for (var i = 0; i < elements.length; i++) {
-            elements[i].style.display = 'none';
-        }
-        
-        // Remove ad-related attributes and events
-        elements = document.querySelectorAll('[onclick*="pop"], [onclick*="redirect"], [data-link*="pop"], [data-link*="redirect"]');
-        for (var i = 0; i < elements.length; i++) {
-            elements[i].removeAttribute('onclick');
-            elements[i].removeAttribute('data-link');
-        }
-        
-        // Remove iframe elements from ad networks
-        elements = document.querySelectorAll('iframe[src*="doubleclick.net"], iframe[src*="googleadservices.com"]');
-        for (var i = 0; i < elements.length; i++) {
-            elements[i].remove();
-        }
-    }
-    window.onload = blockAds;
-    </script>
-    
 
     <meta name="description" content="Watch movies online for free! Better than any other site available.">
     <meta name="keywords" content="vsyncplus, 123movies, 123movie, 123 movies, movies123, free movies, watch movies online, movies123, fmovies, putlocker, solarmovies">
